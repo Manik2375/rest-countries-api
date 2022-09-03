@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Where in the world? You are?</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="css/main.css" />
+		<script src="./js/main.js" type="module" defer></script>
+
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+			defer
+		></script>
+	</head>
+	<body class="secondary-bg">
+		<header>
+			<nav class="main-navbar primary-bg">
+				<h1 class="main-heading">Where in the world?</h1>
+				<div class="theme-switcher-container">
+					<button class="theme-btn" id="theme-toggler">System Preference</button>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<div class="search-container">
+				<form>
+					<span><ion-icon name="search-outline" class=" search-icon"></ion-icon></span>
+					<input
+						type="search"
+						name="country"
+						id="search-box"
+						class="search-box primary-bg"
+						placeholder="Search for a country..."
+						autocomplete="country-name"
+					/>
+				</form>
+			</div>
+			<div class="filter-container">
+				<select name="filter" id="filter-box" class="filter-box primary-bg">
+					<option value="no-filter" selected>Filter by Region</option>
+					<option value="africa">Africa</option>
+					<option value="americas">America</option>
+					<option value="asia">Asia</option>
+					<option value="europe">Europe</option>
+					<option value="oceania">Oceania</option>
+				</select>
+			</div>
+			<div class="countries-container"></div>
+		</main>
+	</body>
+</html>
