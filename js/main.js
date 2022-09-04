@@ -79,7 +79,7 @@ const countriesJSON = countriesRawJSON.map((country) => {
 				.map((nativeName) => nativeName.official)
 				.join(", "),
 		flagSrc: country.flags.png,
-		population: country.population,
+		population: country.population.toLocaleString(),
 		region: country.region,
 		subRegion: country.subregion,
 		capital: country.capital?.join(", "),
