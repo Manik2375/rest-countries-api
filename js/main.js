@@ -304,7 +304,7 @@ function showDetailPage({ name, flagSrc, properties, borderCountries }) {
 }
 
 async function getData() {
-	return fetch("https://restcountries.com/v3.1/all");
+	return fetch("https://restcountries.com/v3.1/all?fields=name,flags,population,region,capital,borders,cca3,languages,currencies,subregion");
 }
 function getCountryObj(countryName) {
 	const countryObj = countriesJSON.find((country) => country.name == countryName);

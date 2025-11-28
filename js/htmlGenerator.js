@@ -59,10 +59,6 @@ export function detailPageHTMLGenerator({ name, flagSrc, borderCountries, proper
                     <dd class="country__property-value">${properties.capital}</dd>
                 </div>
                 <div>
-                    <dt class="country__property">Top Level Domain</dt>
-                    <dd class="country__property-value">${properties.tld}</dd>
-                </div>
-                <div>
                     <dt class="country__property">Currencies</dt>
                     <dd class="country__property-value">${properties.currencies}</dd>
                 </div>
